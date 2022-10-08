@@ -1,0 +1,54 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.box-start{ 
+    text-align: center;
+    display: flex;
+    
+}
+
+.btn-start{
+    width: 250px;
+    height: 90px;
+    font-size: 35px;
+    border: #00b0ff solid 3px;
+    box-shadow: 1px 2px 10px #00b0ff,3px 3px 10px #00b0ff;
+    border-radius: 50px;
+    background-color: aliceblue;
+    transition: 2s;
+}
+.btn-start a{
+    font-weight: bold;
+    color: #00b0ff;
+    text-decoration: none;
+    transition: 1s;
+}
+.btn-start:hover{
+    background-color: #00b0ff;
+}
+.btn-start a:hover{
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+.container-start{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/bg03.jpg) no-repeat center;
+    background-size: cover;
+}
+
+

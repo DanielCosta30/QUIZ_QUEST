@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bg01.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; /* espacamento interno */
+}
+.btn-back{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 120px;
+    height: 55px;
+    border: #00b0ff solid 3px;
+    box-shadow: 1px 2px 10px #00b0ff,3px 3px 10px #00b0ff;
+    border-radius: 50px;
+    background-color: aliceblue;
+}
+.btn-back a{
+    font-weight: bold;
+    font-size: 20px;
+    color: #00b0ff;
+    text-decoration: none;
+}
+.btn-back:hover{
+    background-color: #00b0ff;
+}
+.btn-back a:hover{
+    font-weight: bold;
+    color: aliceblue;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.centro {
+    text-align: center;
+}
+
+article{
+    width: 500px;
+    box-shadow: 1px 2px 5px #00b0ff,3px 6px 10px #00b0ff;
+    background: white;
+}
+
+.questoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background: white;
+    font-weight: bold;
+  
+}
+
+#nQuestao {
+  
+    background: #00b0ff;
+    padding: 4px 10px 2px 10px;
+    border-radius: 50%;
+}
+
+#pergunta{
+    display: inline;
+}
+
+/* article que acomoda a questao completa */
+.questao {
+    padding: 1.5rem;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.questao ol li {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.questao ol li:hover {
+    background: #00b0ff;
+    cursor: pointer;
+}
+
+.bloqueado {
+    display: none;
+}
+
+.bloqueado li:hover {
+    display: none;
+}
+
+#instrucoes {
+    background: aliceblue;
+    color: #00b0ff;
+    font-weight: bold;
+    padding: 0.625rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    animation: piscar 1.5s infinite alternate;
+}
+
+#aviso {
+    color: #00b0ff;
+    height: 50px;
+    font-size: 25px;
+    padding: 1%;
+}
+
+/* ANIMACAO */
+
+/* Animar o input */
+@keyframes piscar {
+    0% {
+        filter: drop-shadow(0 0 15px #00b0ff);
+        -webkit-filter: drop-shadow(0 0 15px #00b0ff);
+        -moz-filter: drop-shadow(0 0 15px #00b0ff);
+        -o-filter: drop-shadow(0 0 15px #00b0ff);
+        -ms-filter: drop-shadow(0 0 15px #00b0ff);
+    }
+    100% {
+    }
+}
+
+.animar {
+    animation: piscar .75s infinite alternate;
+}
+
+.aparecer {
+    animation: aparecer .5s infinite alternate;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
