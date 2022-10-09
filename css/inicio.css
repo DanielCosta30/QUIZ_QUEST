@@ -10,7 +10,8 @@ body {
     width: 100vw;
     height: 100vh;
     background: url(../img/bg01.jpg) no-repeat center;
-    background-size: cover
+    background-size: cover;
+    overflow: hidden;
 }
 
 main {
