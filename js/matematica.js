@@ -79,3 +79,12 @@ function atribuirDados(data, i) {
     //console.log(resposta)
 }
 
+// COMECAR O QUIZ
+let questaoAtual = 0
+pegarDados(0)
+
+function proximaQuestao(id) {
+  let proxima = parseInt(id)
+  pegarDados(proxima)
+}
+
