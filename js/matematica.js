@@ -127,4 +127,13 @@ function verificarSeAcertou(nQuestao, resposta) {
     }
   }, 50)
 
+  // atualizar o placar
+  atualizarPlacar()
+
+}
+
+function atualizarPlacar() {
+  placar.textContent = pontos
+}
+
 
