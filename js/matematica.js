@@ -28,3 +28,31 @@ let somAcerto   = document.querySelector('#somAcerto')
 let somErro     = document.querySelector('#somErro')
 let somAplausos = document.querySelector('#somAplausos')
 
+// ENDERECO DO ARQUIVO BACK END
+const url = 'https://api-rest-quiz-sannyhl.herokuapp.com/questions/findByMateria?materia=MATEMATICA'
+
+function pegarDados(i) {
+
+  fetch(url).then(response =>{
+      
+        return response.json();
+
+      }).then(data => {
+
+        if(data.erro) {
+          console.log("Erro ao acessar o JSON")
+          return
+        }
+        
+        // passar o quantidade de questoes para a variavel
+        let qtdQuestoes = (data.length)
+        // escrver a qtdQuestoes para total
+        total.textContent = parseInt(qtdQuestoes)
+        
+        // passe o valor de i no parametro
+        atribuirDados(data, i)
+
+      })
+      
+} // fim pegarDados
+
