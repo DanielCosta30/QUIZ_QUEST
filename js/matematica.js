@@ -117,3 +117,14 @@ function verificarSeAcertou(nQuestao, resposta) {
   proxima = parseInt(numero.textContent)+1
   //console.log("Próxima " + proxima)
 
+  setTimeout(function() {
+    
+    if(proxima > quantidadeDeQuestoes) {
+        console.log('Fim do Jogo!')
+        fimDoJogo()
+    } else {
+        proximaQuestao(proxima)
+    }
+  }, 50)
+
+
