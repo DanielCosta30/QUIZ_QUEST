@@ -47,8 +47,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/bg03.jpg) no-repeat center;
+    background: url(../img/bg01.jpg) no-repeat center;
     background-size: cover;
+}
+h1{
+   
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 15px;
+    color:#00b0ff
 }
 
 
