@@ -88,3 +88,32 @@ function proximaQuestao(id) {
   pegarDados(proxima)
 }
 
+function verificarSeAcertou(nQuestao, resposta) {
+
+  let numeroDaQuestao = nQuestao.value
+  //console.log("Questão " + numeroDaQuestao)
+
+  let respostaEscolhida = resposta.textContent
+  //console.log("RespU " + respostaEscolhida)
+
+  // usar o fetch para pegar os dados
+  pegarDados(numeroDaQuestao)
+
+  let respostaCorrect = correct.value
+  //console.log(respostaCorrect)
+
+  if(respostaEscolhida == respostaCorrect) {
+      //console.log("Acertou")
+      somAcerto.play()      
+      pontos += 10 // pontos = pontos + 10
+  } else {
+      console.log("Errou!")
+      somErro.play()
+  }
+
+  quantidadeDeQuestoes = parseInt(total.textContent)
+  //console.log("Total " + quantidadeDeQuestoes)
+
+  proxima = parseInt(numero.textContent)+1
+  //console.log("Próxima " + proxima)
+
