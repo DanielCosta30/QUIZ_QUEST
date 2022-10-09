@@ -28,6 +28,8 @@ let somAcerto   = document.querySelector('#somAcerto')
 let somErro     = document.querySelector('#somErro')
 let somAplausos = document.querySelector('#somAplausos')
 
+
+
 // ENDERECO DO ARQUIVO BACK END
 const url = 'https://api-rest-quiz-sannyhl.herokuapp.com/questions/findByMateria?materia=MATEMATICA'
 
@@ -55,4 +57,25 @@ function pegarDados(i) {
       })
       
 } // fim pegarDados
+
+
+function atribuirDados(data, i) {
+  if(i >= data.length) {
+    //console.log('Fim das questoes')
+    i = 1
+  }
+    nQuestao.textContent = data[i].id
+    pergunta.textContent = data[i].pergunta
+
+    a.textContent = data[i].alternativaCorreta
+    b.textContent = data[i].primeiraAlternativaIncorreta
+    c.textContent = data[i].segundaAlternativaIncorreta
+    d.textContent = data[i].terceiraAlternativaIncorreta
+    
+    numero.textContent = data[i].id
+    
+    let certa = document.querySelector('#correct')
+    certa.value = data[i].alternativaCorreta
+    //console.log(resposta)
+}
 
