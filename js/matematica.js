@@ -136,4 +136,28 @@ function atualizarPlacar() {
   placar.textContent = pontos
 }
 
+function fimDoJogo() {
+
+  somAplausos.play()
+
+  let s = 's'
+  pontos == 0 ? s = '' : s = s
+  instrucoes.textContent = "Fim de Jogo! Você conseguiu " + pontos + " ponto"+ s
+
+  instrucoes.classList.add('placar')
+
+  // OCULTAR O ARTICLE DA QUESTAO
+  questao.style.display = 'none'
+
+  setTimeout(function() {
+      pontos = 0 // zerar placar
+      instrucoes.classList.remove('placar')
+
+      // REINICIAR O JOGO
+      questao.style.display = 'block'
+      proximaQuestao(0)
+      instrucoes.textContent = 'Leia a questão e clique na resposta correta'
+  }, 5000)
+
+}
 
