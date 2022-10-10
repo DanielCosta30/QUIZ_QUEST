@@ -1,4 +1,4 @@
-# Quiz Game
+
 <h1 align="center">:file_cabinet: Projeto Quiz Game - Perguntas</h1>
 
 ## :memo: Descrição
