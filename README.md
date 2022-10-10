@@ -27,6 +27,6 @@ O projeto consiste em um quiz de perguntas e reposta com 5 temas desde matematic
   
 ##  Colaboradores
 <table>
-Daniel Costa 
-Sanny Ellen 
+* Daniel Costa 
+* Sanny Ellen 
 </table>
