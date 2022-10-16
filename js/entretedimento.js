@@ -157,7 +157,7 @@ function fimDoJogo() {
       questao.style.display = 'block'
       proximaQuestao(0)
       instrucoes.textContent = 'Leia a questão e clique na resposta correta'
-  }, 5000)
+  }, 4000)
 
 }
 
