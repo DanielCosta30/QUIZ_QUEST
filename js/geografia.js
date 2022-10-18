@@ -31,7 +31,7 @@ let somAplausos = document.querySelector('#somAplausos')
 
 
 // ENDERECO DO ARQUIVO BACK END
-const url = 'https://api-rest-quiz-sannyhl.herokuapp.com/questions/findByMateria?materia=MATEMATICA'
+const url = 'https://api-rest-quiz-sannyhl.herokuapp.com/questions/findByMateria?materia=GEOGRAFIA'
 
 function pegarDados(i) {
 
